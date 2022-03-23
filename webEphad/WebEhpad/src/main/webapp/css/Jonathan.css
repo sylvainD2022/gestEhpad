@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+
+body {
+	height: 100%;
+	width:  100%;
+	padding:0;
+	margin:0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.6fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "navBar content content content"
+    "navBar content content content";
+  height: 100%;
+  width:  100%;
+}
+
+.content { 
+	grid-area: content; 
+	height: 100%;
+	width:  100%;
+}
+
+.navBar { 
+	display: flex;
+	grid-area: navBar; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #a0a0a0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.6fr 2.6fr 0.2fr;
+  grid-template-rows: 0.2fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". messageAccueil ."
+    ". . .";
+  grid-area: header;
+  height: 100%;
+  width:  100%;
+  background-color: #c0c0c0;
+}
+
+.messageAccueil { 
+	grid-area: messageAccueil; 
+	height: 100%;
+	width:  100%;
+}
+
+.btnNav{
+	width: 200px;
+	height: 75px;
+	justify-content: center;
+	border-radius : 5%;
+}

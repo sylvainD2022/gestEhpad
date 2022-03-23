@@ -1,0 +1,32 @@
+.liste
+{
+	border: 1px solid black;
+}
+
+.listeH
+{
+	display: block;
+}
+
+.listeB
+{
+	display: block;
+    height: 500px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.listeB>tr
+{
+	border: 1px solid black;
+}
+
+.listeB>tr:hover
+{
+	background-color: #090a;
+}
+
+#sel
+{
+	background-color: #040a;
+}

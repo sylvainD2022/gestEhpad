@@ -1,0 +1,29 @@
+
+span{
+    width:225px;
+    display : block;
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+span:hover{
+    background-color: cyan;
+    border : 2px solid black;
+}
+.left, .right{
+    display : flex;
+    flex-direction: column;
+    position:relative;
+    width:250px;
+    max-height: 125px;
+    overflow: auto;
+    border : 2px solid black;
+}
+.mainBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+    
+    
+}
